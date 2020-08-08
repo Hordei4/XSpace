@@ -1,0 +1,316 @@
+body {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  color: #fff;
+  margin: 0;
+  padding-top: 53px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.item-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.secondary-nav .item:last-child {
+  margin-right: 0;
+}
+
+.secondary-nav .item-link {
+  opacity: 0.5;
+}
+
+/* Header */
+
+.section {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 32px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 368px;
+  margin: auto;
+}
+
+.description::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 26px;
+}
+
+/* Section */
+
+.video {
+  height: 750px;
+  width: 750px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Video */
+
+.features {
+  position: relative;
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.features-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.table {
+  margin-bottom: 200px;
+}
+
+.table-column {
+  width: 290px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 179.69%;
+}
+
+.table-gray {
+  opacity: .5;
+}
+
+.features-text {
+  max-width: 490px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.rocket {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 20%;
+}
+
+/* Features */
+
+.footer {
+  padding: 130px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 1230px;
+  width: 90%;
+}
+
+.footer-nav .item-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer .logo {
+  margin-bottom: 43px;
+}
+
+.footer-nav {
+  margin-bottom: 28px;
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #808080;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.footer-mail {
+  color: #808080;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  min-width: 200px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .video {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header .logo {
+    margin-bottom: 20px;
+  }
+
+  .header .main-nav {
+    margin-bottom: 20px;
+  }
+
+  .video {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .item-link {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+  .description {
+    max-width: 300px;
+  }
+
+  .section {
+    padding-top: 50px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .video {
+    width: 400px;
+    height: 400px;
+  }
+
+  .features {
+    padding: 30px 0;
+  }
+
+  .rocket {
+    width: 50%;
+    z-index: 50;
+    opacity: .3;
+  }
+
+  .features-title {
+    text-align: center;
+  }
+
+  .table {
+    margin: auto;
+    margin-bottom: 60px;
+  }
+
+  .features-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .features-title,
+  .table,
+  .features-text {
+    z-index: 99;
+  }
+
+  .table-column {
+    font-size: 10px;
+    width: 140px;
+    margin: auto; 
+  }
+
+  .footer {
+    text-align: center;
+    margin: auto;
+  }
+
+  .footer-nav .list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-nav .item-link {
+    font-size: 14px;
+  }
+
+  .footer-nav .item {
+    margin-bottom: 10px;
+  }
+  
+  .footer-text {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .video {
+    width: 220px;
+    height: 220px;
+  }
+}
